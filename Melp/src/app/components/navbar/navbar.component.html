@@ -1,0 +1,11 @@
+<div class="melp-title" style="text-align:center">
+    <h1>
+    MELP
+    </h1>
+  <div class="searching">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search by Name" aria-label="Search" (keyup.enter)="searchRestaurant(searchText.value)" #searchText>
+      <button (click)="searchRestaurant(searchText.value)" class= "btn btn-secondary my-sm-0" type="button">Search</button>
+    </form>
+  </div> 
+  </div>

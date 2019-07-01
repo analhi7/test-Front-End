@@ -5,19 +5,30 @@ import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { RestaurantsComponent } from './components/restaurants/restaurants.component';
+import { SearchComponent } from './components/search/search.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+
+import { routing, appRoutingProviders } from './app.routes';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    RestaurantsComponent
+    RestaurantsComponent,
+    SearchComponent,
+    NavbarComponent 
+   
 
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    routing
     
   ],
-  providers: [],
+  providers: [
+    appRoutingProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

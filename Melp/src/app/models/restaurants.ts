@@ -1,8 +1,8 @@
 export class Restaurants{
     constructor(
      public _id :string,
-     public rating :String,
-     public name:Number,
+     public rating :Number,
+     public name:String,
      public contact: {
       site: String,
       email:String,

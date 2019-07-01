@@ -1,0 +1,28 @@
+
+<main>
+<p>Restaurantes</p>
+<div>
+    <button (click)="filteredAsc()">filtrame Asc</button>
+    <button (click)="filteredDes()">filtrame Des</button>
+   
+
+  </div>
+<div class="table">
+    <div class="row">
+        <div class="restaurants col-sm-4" *ngFor = "let restaurant of restaurant">
+          <div class="card card text-white bg-dark" style="max-width: 22rem; max-height: 22rem">
+            <div class="card-body">
+              <h5 class="card-header">{{restaurant.name}}</h5>
+              <p class="card-text">Telephone: {{restaurant.contact.phone}}</p>
+    <p class="card-text">email: {{restaurant.contact.email}}</p>
+    <p class="card-text">address : {{restaurant.address.street}}, {{restaurant.address.city}}, {{restaurant.address.state}}</p>
+              <p class="card-text">rating: {{restaurant.rating}}</p>
+              <a href="{{restaurant.contact.site}}" class="btn btn-info">Web site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+</main>
