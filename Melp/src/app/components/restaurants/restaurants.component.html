@@ -1,9 +1,10 @@
 <div>
    
 
-    <div>
-        <button (click)="filteredAsc()">filtrame Asc</button>
-        <button (click)="filteredDes()">filtrame Des</button>
+    <div class="order-by">
+      <h3>Order by rating</h3>
+        <button class="btn btn-secondary" (click)="filteredAsc()">Ascending</button>
+        <button class="btn btn-secondary" (click)="filteredDes()">Descending</button>
         
        
 
@@ -31,7 +32,7 @@
                     <p class="card-text">Telephone: {{restaurant.contact.phone}}</p>
           <p class="card-text">email: {{restaurant.contact.email}}</p>
           <p class="card-text">address : {{restaurant.address.street}}, {{restaurant.address.city}}, {{restaurant.address.state}}</p>
-                    <p class="card-text">rating:{{restaurant.rating}}</p>
+                    <p class="card-text">rating: {{restaurant.rating}}</p>
                     <a href="{{restaurant.contact.site}}" class="btn btn-info">Web site</a>
                   </div>
                 </div>
