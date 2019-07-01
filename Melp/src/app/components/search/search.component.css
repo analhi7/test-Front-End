@@ -1,0 +1,22 @@
+.table{
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+.restaurants{
+    margin-bottom: 30px;
+    
+    }
+
+    .order-by{
+        margin-top: -8%;
+        margin-bottom: 3%;
+        padding-left: 4%;
+    }
+
+    .btn-secondary {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+        margin-right: 1%;
+    }
